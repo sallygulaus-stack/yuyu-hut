@@ -1,0 +1,25 @@
+{
+  "_readme": "复制为 config.json 使用。dataDir 留空使用用户数据目录；也可传 --data-dir 或 ONEBOT_DATA_DIR。windowUrl 要与面板配置的固定 port 一致。",
+
+  "httpPort": 3000,
+  "wsPort": 3001,
+  "listen": "127.0.0.1",
+
+  "selfId": 10000,
+  "selfName": "本地机器人",
+  "peerId": 10001,
+  "peerName": "本地用户",
+
+  "windowUrl": "http://127.0.0.1:8610/say",
+
+  "dataDir": "",
+  "mediaDir": "",
+
+  "token": "",
+
+  "legacyMediaPrefix": "",
+  "legacyMediaDir": "",
+
+  "heartbeatMs": 30000,
+  "media_limits": {"image": 10485760, "record": 20971520}
+}

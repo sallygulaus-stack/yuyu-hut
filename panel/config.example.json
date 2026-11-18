@@ -1,0 +1,61 @@
+{
+  "mode": "demo",
+  "title": "鱼鱼小窝",
+  "peer_name": "聊天助手",
+  "me_name": "我",
+  "data_dir": "",
+  "port": 0,
+  "media_limits": {"image": 10485760, "record": 20971520},
+  "onebot": {
+    "enabled": false,
+    "base_url": "http://127.0.0.1:3000",
+    "token": "",
+    "token_env": "ONEBOT_TOKEN",
+    "timeout": 12
+  },
+  "comfyui": {
+    "enabled": false,
+    "base_url": "http://127.0.0.1:8188",
+    "token": "",
+    "token_env": "COMFYUI_TOKEN",
+    "timeout": 30
+  },
+  "model": {
+    "enabled": false,
+    "base_url": "http://127.0.0.1:8000/v1",
+    "model": "",
+    "api_key": "",
+    "api_key_env": "MODEL_API_KEY",
+    "timeout": 45
+  },
+  "dsh_local": {
+    "enabled": false,
+    "base_url": "http://127.0.0.1:0",
+    "token": "",
+    "token_env": "DSH_LOCAL_TOKEN",
+    "timeout": 12,
+    "allow_insecure_local": true,
+    "endpoint_id": "dsh-local"
+  },
+  "dsh_remote": {
+    "enabled": false,
+    "base_url": "https://example.invalid",
+    "token": "",
+    "token_env": "DSH_REMOTE_TOKEN",
+    "timeout": 15,
+    "endpoint_id": "dsh-remote",
+    "heartbeat_seconds": 30,
+    "poll_seconds": 0.5,
+    "reconnect_seconds": 1,
+    "ca_file": "",
+    "reconnect": true
+  },
+  "profiles": {
+    "local": {
+      "me": {"avatar": "assets/default-me.png", "signature": ""},
+      "peer": {"avatar": "assets/default-peer.png", "signature": ""}
+    },
+    "onebot": {"me": {}, "peer": {}},
+    "dsh": {"me": {}, "peer": {}}
+  }
+}

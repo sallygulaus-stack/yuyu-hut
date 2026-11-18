@@ -1,0 +1,10 @@
+.song-import{display:flex;align-items:flex-start;flex-direction:column;gap:4px;margin-top:12px;min-width:0}
+.song-import button{
+  display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:6px 10px;
+  border:1px solid #7483b4;border-radius:7px;background:#242949;color:#ecf0ff;
+  font:inherit;font-size:12px;white-space:nowrap;cursor:pointer
+}
+.song-import button:hover:not(:disabled){background:#333c65}
+.song-import button:disabled{opacity:.6;cursor:default}
+.song-import span{font-size:11px;line-height:1.35;min-height:1.35em;color:#c0c9e5;overflow-wrap:anywhere}
+.song-import button:focus-visible{outline:2px solid #b3c7ff;outline-offset:2px}

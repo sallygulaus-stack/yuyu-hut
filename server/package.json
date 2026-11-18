@@ -1,0 +1,16 @@
+{
+  "name": "onebot-local",
+  "version": "0.1.0",
+  "description": "本地 OneBot v11 服务端：给机器人框架一个「假 QQ」，不装 QQ、不碰腾讯、不逆向任何私有协议。",
+  "type": "module",
+  "main": "onebot-local.mjs",
+  "scripts": {
+    "start": "node onebot-local.mjs",
+    "doctor": "node ../tools/doctor.mjs"
+  },
+  "keywords": ["onebot", "onebot-v11", "chatbot", "local", "mock"],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}

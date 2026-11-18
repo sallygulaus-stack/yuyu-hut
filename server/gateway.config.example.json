@@ -1,0 +1,10 @@
+{
+  "_readme": "This is the project gateway, not a native DSH API. Copy outside the source tree; set data_dir to a persistent absolute directory. Keep token private. TLS files belong to your own gateway.",
+  "data_dir": "",
+  "port": 0,
+  "token": "",
+  "onebot_url": "http://127.0.0.1:3000",
+  "test_controls": false,
+  "media_limits": {"image": 10485760, "record": 20971520},
+  "synthetic_profiles": {}
+}

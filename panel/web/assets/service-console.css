@@ -1,0 +1,64 @@
+.service-console,.sc-home-row{min-width:0;color:var(--ink,#202a32);font-size:13px;line-height:1.5;letter-spacing:0}
+.service-console.integration-list{margin:0 auto;padding:0;max-width:940px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 28px}
+.service-console [hidden],.sc-home-row [hidden]{display:none!important}
+.service-console section{min-width:0;border-top:1px solid var(--edge,#d9e1e6);padding:16px 0 4px}
+.service-console .sc-chat,.service-console .sc-services{grid-column:1/-1}
+.service-console h3,.service-console h4{margin:0 0 10px;font-weight:600}
+.service-console h3{font-size:15px}
+.service-console h4{font-size:13px}
+.sc-caption,.sc-feedback{font-size:12px;color:var(--ink-2,#4b5b65);overflow-wrap:anywhere}
+.sc-caption{margin:0 0 10px}
+.sc-feedback{margin:0;min-height:18px}
+.sc-feedback:empty{display:none}
+.sc-feedback[data-kind="error"]{color:var(--red,#aa353e)}
+.sc-feedback[data-kind="ok"]{color:var(--sea-ink,#165a52)}
+.sc-form,.sc-data{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
+.sc-grid,.sc-service-forms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;width:100%}
+.sc-form label{display:flex;flex-direction:column;align-items:start;gap:4px;width:100%;min-width:0}
+.sc-form .sc-check{flex-direction:row;align-items:center}
+.sc-form input:not([type="checkbox"]),.sc-form select,.sc-copy-fallback{
+  box-sizing:border-box;width:100%;max-width:500px;height:34px;padding:0 8px;border:1px solid var(--line-2,#cbd8df);
+  border-radius:6px;color:var(--ink,#202a32);background:var(--card,#fff);font:inherit;letter-spacing:0
+}
+.sc-form input[type="checkbox"]{margin:0 5px 0 1px;accent-color:var(--sea-ink,#165a52)}
+.sc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.sc-button{
+  display:inline-flex;justify-content:center;align-items:center;min-height:32px;box-sizing:border-box;
+  padding:4px 9px;border:1px solid var(--line-2,#cbd8df);border-radius:6px;color:var(--ink,#202a32);
+  background:var(--card,#fff);font:inherit;font-size:12px;letter-spacing:0;line-height:1.35;
+  text-align:center;text-decoration:none;cursor:pointer
+}
+.sc-button:hover:not(:disabled){background:var(--well,#eef4f5)}
+.sc-button:focus-visible,.sc-form :is(input,select):focus-visible{outline:2px solid var(--sea-ink,#165a52);outline-offset:2px}
+.sc-button:disabled{opacity:.55;cursor:default}
+.sc-primary{background:var(--sea-soft,#deeee9);color:var(--sea-ink,#165a52);font-weight:600}
+.sc-bridge-form{margin-top:10px}
+.sc-mobile{margin-top:12px;border-top:1px solid var(--line-2,#cbd8df);padding-top:10px}
+.sc-mobile h4,.sc-mobile .sc-caption{margin-bottom:0}
+.sc-mobile output{overflow-wrap:anywhere;user-select:text}
+.sc-diagnostics{margin:12px 0;min-width:0}
+.sc-diagnostics dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4px 12px;margin:0 0 8px;font-size:12px}
+.sc-diagnostics dt{color:var(--ink-2,#4b5b65)}
+.sc-diagnostics dd{margin:0;overflow-wrap:anywhere}
+.sc-connection-details{margin-top:10px;border-top:1px solid var(--line-2,#cbd8df)}
+.sc-connection-details summary{padding:6px 0;color:var(--ink-2,#4b5b65);cursor:pointer;font-size:12px}
+.sc-connection-details summary:focus-visible{outline:2px solid var(--sea-ink,#165a52);outline-offset:2px}
+.sc-connection-details dl:empty{display:none}
+.sc-diagnostics .sc-feedback,.sc-home-row .sc-data{margin-top:8px}
+.sc-home-row .sc-diagnostics{margin-bottom:0}
+.sc-data code{
+  font-size:11px;max-width:100%;overflow-wrap:anywhere;word-break:break-word;user-select:text;
+  padding:4px 6px;border-radius:4px;background:var(--well,#eef4f5)
+}
+.sc-copy-fallback{display:block;width:min(340px,100%);min-height:66px;padding:5px;resize:vertical}
+.sc-service-forms form{border-left:2px solid var(--edge,#d9e1e6);padding-left:10px}
+.sc-service-forms h4{margin-bottom:0}
+.sc-sample{display:block;max-width:100%;width:256px;height:auto;border-radius:6px}
+.sc-services [data-sample-output] .sc-actions,.sc-home-row [data-sample-output] .sc-actions{margin-top:8px}
+audio.sc-sample{min-height:40px}
+.sc-status-list{margin:0;padding-left:18px;color:var(--ink-2,#4b5b65);overflow-wrap:anywhere}
+@media (max-width:670px){
+  .service-console.integration-list,.sc-grid,.sc-service-forms{grid-template-columns:minmax(0,1fr)}
+  .service-console.integration-list{gap:15px}
+  .sc-service-forms form{padding-bottom:5px}
+}

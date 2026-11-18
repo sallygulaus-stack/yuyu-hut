@@ -1,0 +1,8 @@
+# 统一用 LF，别让 Windows 的换行混进去
+* text=auto eol=lf
+*.py  text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md  text eol=lf
+*.svg text eol=lf
+*.html text eol=lf

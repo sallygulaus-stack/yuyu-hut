@@ -1,0 +1,12 @@
+{
+  "name": "qq-panel-tests",
+  "private": true,
+  "scripts": {
+    "test:gallery": "node tests/gallery/画册浏览器.cjs",
+    "test:gallery:archive": "node tests/gallery/画册浏览器.cjs --媒体库",
+    "test:gallery:queue": "node tests/gallery/画册浏览器.cjs --排队"
+  },
+  "devDependencies": {
+    "playwright-core": "1.56.1"
+  }
+}
