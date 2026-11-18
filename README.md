@@ -233,6 +233,6 @@ python -B panel/panel.py --demo --smoke-test --data-dir ./data/smoke
 
 ## 许可证
 
-本项目尚未为新增代码或内置美术素材授予统一的开源许可证。
+鱼鱼小窝采用 [MIT 许可证](LICENSE)，署名 YG。
 
-原仓库历史版本自带的 MIT 声明保留在 [历史许可证](docs/历史许可证.txt)，不将其扩展为本次新增代码的授权声明。画册图标内保留原有 Lucide 第三方许可。
+第三方组件和素材沿用各自的许可。画册图标内保留了 Lucide 的许可声明；[历史许可证](docs/历史许可证.txt)也随源码保留。
